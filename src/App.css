@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  text-indent: 70px;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(17, 102, 108);
+}
+.ul {
+  display: flex;
+  margin-left: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ul li {
+  list-style: none;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding: 40px 0;
+  width: 100%;
+  /* height: 70vh; */
+  display: flex;
+}
+.left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.left p {
+  font-size: 30px;
+
+}
+.right {
+  width: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.right fragement {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 52px;
+  background-color: rgb(188, 182, 182);
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  line-height: 52px;
+  font-weight: bold;
 }
